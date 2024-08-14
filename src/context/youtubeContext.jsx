@@ -24,6 +24,14 @@ export const ContextProvider = ({ children }) => {
       .catch((error) => console.error("Error fetching category:", error));
   };
 
+  //Ana sayfa verilerini çekme fonksiyonu
+  const fetchHomePageData = () => {
+    axios
+      .get(`https://youtube138.p.rapidapi.com/search/?q=New`, options)
+      .then((res) => setSearchResult(res.data.contents))
+      .catch((error) => console.error("Error fetching home page data:", error));
+  };
+
   // Sidebar'ı açıp kapama fonksiyonu
   const toggleSideNav = () => {
     setIsSideNavOpen(!isSideNavOpen);
@@ -37,6 +45,7 @@ export const ContextProvider = ({ children }) => {
         searchResult,
         isSideNavOpen,
         toggleSideNav,
+        fetchHomePageData,
       }}
     >
       {children}

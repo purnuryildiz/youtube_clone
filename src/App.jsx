@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import VideoDetail from "./pages/VideoDetail";
 import SearchResults from "./pages/SearchResults";
+import "./index.css";
 
 function App() {
   return (

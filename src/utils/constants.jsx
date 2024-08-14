@@ -108,6 +108,7 @@ export const categories = [
   {
     name: "Padcasts",
     icon: <MdPodcasts />,
+    divider: true,
   },
   {
     name: "Youtube Premium",
@@ -135,7 +136,7 @@ export const options = {
     gl: "US",
   },
   headers: {
-    "x-rapidapi-key": "ae5debceddmshb207f255af2e9d3p178e46jsn98a28038ac05",
+    "x-rapidapi-key": "e3d4ff47bamsh1fda4a6df1b219bp1791dcjsnebc660ff64c1",
     "x-rapidapi-host": "youtube138.p.rapidapi.com",
   },
 };
