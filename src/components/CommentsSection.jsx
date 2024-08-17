@@ -38,23 +38,18 @@ const CommentsSection = ({ videoId }) => {
   if (loading) return <p>Loading comments...</p>;
 
   if (error) return <p>{error}</p>;
-
   return (
     <div>
       {comments.length === 0 ? (
         <p>No comments available.</p>
       ) : (
         comments.map((comment, index) => {
-          const snippet = comment.snippet || {}; // `snippet` varsa kullan
           return (
-            snippet.authorDisplayName &&
-            snippet.textOriginal && (
-              <CommentCard
-                key={index}
-                authorDisplayName={snippet.authorDisplayName}
-                textOriginal={snippet.textOriginal}
-              />
-            )
+            <CommentCard
+              key={index}
+              authorDisplayName={comment.author.title}
+              textOriginal={comment.content}
+            />
           );
         })
       )}

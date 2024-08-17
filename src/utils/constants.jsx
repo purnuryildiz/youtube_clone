@@ -136,7 +136,7 @@ export const options = {
     gl: "US",
   },
   headers: {
-    "x-rapidapi-key": "e3d4ff47bamsh1fda4a6df1b219bp1791dcjsnebc660ff64c1",
+    "x-rapidapi-key": "402d5936a9msh3f57a10b0ad9b9fp111bd9jsn0f082230bc57",
     "x-rapidapi-host": "youtube138.p.rapidapi.com",
   },
 };

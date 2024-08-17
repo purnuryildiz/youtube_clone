@@ -6,7 +6,7 @@ import VideoCard from "../components/VideoCard";
 import loading from "../assets/loading_2.gif";
 import ConstNav from "../components/ConstNav";
 
-const API_KEY = "e3d4ff47bamsh1fda4a6df1b219bp1791dcjsnebc660ff64c1"; // Anahtar burada
+const API_KEY = "402d5936a9msh3f57a10b0ad9b9fp111bd9jsn0f082230bc57"; // Anahtar burada
 
 const SearchResults = () => {
   const [videos, setVideos] = useState([]);

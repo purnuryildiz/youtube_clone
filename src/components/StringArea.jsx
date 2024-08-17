@@ -21,9 +21,7 @@ const StringArea = ({ text, max }) => {
         <button
           onClick={handleClick}
           style={{ border: "none", background: "none", color: "blue", cursor: "pointer" }}
-        >
-          {showFullText ? "Show Less" : "Show More"}
-        </button>
+        ></button>
       )}
     </div>
   );
